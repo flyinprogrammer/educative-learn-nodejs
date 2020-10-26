@@ -1,0 +1,13 @@
+{
+  "name": "app28",
+  "version": "1.0.0",
+  "description": "HTML Web Server Project",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "author": "Alan Scherger <alan.scherger@gmail.com>",
+  "license": "ISC"
+}

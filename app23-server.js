@@ -33,7 +33,7 @@ server.on('connection', socket => {
   })
 })
 
-server.on('listening', _ => {
+server.on('listening', () => {
   console.log('Server is listening on port', port)
 })
 

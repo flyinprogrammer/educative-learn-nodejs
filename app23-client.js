@@ -7,7 +7,7 @@ const rl = readline.createInterface({
   prompt: ''
 })
 
-const client = net.connect({ port: 3500 }, _ => {
+const client = net.connect({ port: 3500 }, () => {
   console.log('Connection established')
   client.write('Hello from client')
 })
@@ -16,7 +16,7 @@ client.on('data', data => {
   console.log('Msg from server:', data.toString())
 })
 
-client.on('end', _ => {
+client.on('end', () => {
   console.log('disconnected from server')
 })
 
